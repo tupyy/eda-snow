@@ -64,5 +64,42 @@ How to setup a rulebook is beyond this documentation. You can find more informat
 
 An event sent by SNow app looks like:
 ```json
-{"payload":{"state":"1","active":"1","impact":"3","notify":"1","number":"INC0014332","sys_id":"b75d67151bb9ca10ed59419ead4bcb5c","urgency":"3","approval":"not requested","category":"inquiry","made_sla":"1","priority":"5","severity":"3","caller_id":"6816f79cc0a8016401c5a33be04be441","knowledge":"0","opened_at":"2024-04-25 18:47:04","opened_by":"6816f79cc0a8016401c5a33be04be441","escalation":"0","sys_domain":"global","upon_reject":"cancel","reopen_count":"0","sys_mod_count":"1","upon_approval":"proceed","incident_state":"1","sys_class_name":"incident","sys_created_by":"admin","sys_created_on":"2024-04-25 18:47:04","sys_updated_by":"admin","sys_updated_on":"2024-04-25 18:47:05","child_incidents":"0","sys_domain_path":"/","short_description":"Test incident","reassignment_count":"0","task_effective_number":"INC0014332","hierarchical_variables":"variable_pool"}}
+{
+  "payload": {
+    "state": "1",
+    "active": "1",
+    "impact": "3",
+    "notify": "1",
+    "number": "INC0014332",
+    "sys_id": "b75d67151bb9ca10ed59419ead4bcb5c",
+    "urgency": "3",
+    "approval": "not requested",
+    "category": "inquiry",
+    "made_sla": "1",
+    "priority": "5",
+    "severity": "3",
+    "caller_id": "6816f79cc0a8016401c5a33be04be441",
+    "knowledge": "0",
+    "opened_at": "2024-04-25 18:47:04",
+    "opened_by": "6816f79cc0a8016401c5a33be04be441",
+    "escalation": "0",
+    "sys_domain": "global",
+    "upon_reject": "cancel",
+    "reopen_count": "0",
+    "sys_mod_count": "1",
+    "upon_approval": "proceed",
+    "incident_state": "1",
+    "sys_class_name": "incident",
+    "sys_created_by": "admin",
+    "sys_created_on": "2024-04-25 18:47:04",
+    "sys_updated_by": "admin",
+    "sys_updated_on": "2024-04-25 18:47:05",
+    "child_incidents": "0",
+    "sys_domain_path": "/",
+    "short_description": "Test incident",
+    "reassignment_count": "0",
+    "task_effective_number": "INC0014332",
+    "hierarchical_variables": "variable_pool"
+  }
+}
 ```
