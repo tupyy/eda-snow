@@ -1,0 +1,12 @@
+---
+plugin: servicenow.itsm.now
+table: cmdb_ci_server
+instance:
+  host: {{ host }}
+  username: {{ username }}
+  password: {{ password }}
+
+columns:
+  - sys_id
+  - name
+  - ip_address
