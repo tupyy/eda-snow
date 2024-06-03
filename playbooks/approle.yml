@@ -3,6 +3,13 @@
   gather_facts: false
 
   tasks:
+    - name: Recursively find /tmp files older than 2 days
+      ansible.builtin.find:
+        paths: /tmp
+      register: files
+
+    - debug: var=files
+
     - name: Read client-id secret
       ansible.builtin.set_fact:
         client_id_content: "{{ lookup('ansible.builtin.file', '/etc/receptor/secretid_token.json') }}"
