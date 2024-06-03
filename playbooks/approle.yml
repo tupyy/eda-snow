@@ -1,0 +1,10 @@
+- name: Generate vault secret_id
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Read client-id secret
+      ansible.builtin.set_fact:
+        client_id_content: "{{ lookup('ansible.builtin.file', '/etc/receptor/secretid_token.json') }}"
+
+    - debug: var=client_id_content
