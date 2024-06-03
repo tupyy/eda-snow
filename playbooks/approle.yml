@@ -5,8 +5,9 @@
   tasks:
     - name: Recursively find /tmp files older than 2 days
       ansible.builtin.find:
-        paths: /tmp
+        paths: /etc/receptor
       register: files
+      delegate_to: localhost
 
     - debug: var=files
 
